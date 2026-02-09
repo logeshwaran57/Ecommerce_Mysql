@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dbfiddle.uk/5mr3nHxi -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection, .ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+.ͼ4 .cm-content :focus::selection, .ͼ4 .cm-content :focus ::selection {background-color: Highlight !important;}
+.ͼ4 .cm-content :focus {caret-color: initial !important;}
+.ͼ4 .cm-content {caret-color: transparent !important;}
+</style>
+  <title>MySQL 8.0 | db&lt;&gt;fiddle</title>
+  <meta name="description" content="a free online environment to experiment with SQL and other code">
+  <meta property="og:title" content="MySQL 8.0">
+  <meta property="og:description" content="
+
+
+
+
+
+
+
+
+
+&gt; ``` status
+&gt; Records: 3  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Records: 3  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Records: 4  Duplicates: 0  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 1: Customers (last 30 days) |
+
+| name | email |
+|:-----|:------|
+| John Doe | john@example.com |
+| Jane Smith | jane@example.com |
+| Bob Johnson | bob@example.com |
+
+| Result |
+|:-------|
+| QUERY 2: Total per customer |
+
+| name | total\_spent |
+|:-----|------------:|
+| John Doe | 125.00 |
+| Jane Smith | 120.00 |
+| Bob Johnson | 200.00 |
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 3: Product C updated to $45 |
+
+
+&gt; ``` status
+&gt; Records: 0  Duplicates: 0  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 4: Discount column added |
+
+| Result |
+|:-------|
+| QUERY 5: Top 3 products by price |
+
+| name | price |
+|:-----|------:|
+| Product C | 45.00 |
+| Product B | 35.00 |
+| Product A | 25.00 |
+
+| Note |
+|:-----|
+| QUERY 6: Will show after normalization |
+
+| Result |
+|:-------|
+| QUERY 7: Customers \&amp; Orders Join |
+
+| name | order\_date | total\_amount |
+|:-----|:-----------|-------------:|
+| John Doe | 2026-02-01 | 75.00 |
+| John Doe | 2026-01-05 | 50.00 |
+| Jane Smith | 2026-01-15 | 120.00 |
+| Bob Johnson | 2026-01-20 | 200.00 |
+
+| Result |
+|:-------|
+| QUERY 8: Orders over 150 |
+
+| id | customer\_id | order\_date | total\_amount |
+|---:|------------:|:-----------|-------------:|
+| 4 | 3 | 2026-01-20 | 200.00 |
+
+
+
+&gt; ``` status
+&gt; Records: 6  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 9: Normalization complete |
+
+| Result |
+|:-------|
+| QUERY 6 (Updated): Customers with Product A |
+
+| name |
+|:-----|
+| John Doe |
+| Jane Smith |
+
+| Result |
+|:-------|
+| QUERY 10: Average order total |
+
+| average\_order\_total |
+|--------------------:|
+| 105.000000 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL CUSTOMERS TABLE |
+
+| id | name | email | address |
+|---:|:-----|:------|:--------|
+| 1 | John Doe | john@example.com | 123 Main St, Chennai |
+| 2 | Jane Smith | jane@example.com | 456 Oak Ave, Mumbai |
+| 3 | Bob Johnson | bob@example.com | 789 Pine Rd, Delhi |
+
+| Table\_Overview |
+|:---------------|
+| FINAL PRODUCTS TABLE |
+
+| id | name | price | description | discount |
+|---:|:-----|------:|:------------|---------:|
+| 1 | Product A | 25.00 | High quality item A | 0.00 |
+| 2 | Product B | 35.00 | Premium item B | 0.00 |
+| 3 | Product C | 45.00 | Standard item C | 0.00 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL ORDERS TABLE |
+
+| id | customer\_id | order\_date | total\_amount |
+|---:|------------:|:-----------|-------------:|
+| 1 | 1 | 2026-02-01 | 85.00 |
+| 2 | 2 | 2026-01-15 | 120.00 |
+| 3 | 1 | 2026-01-05 | 35.00 |
+| 4 | 3 | 2026-01-20 | 180.00 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL ORDER\_ITEMS TABLE |
+
+| id | order\_id | product\_id | quantity |
+|---:|---------:|-----------:|---------:|
+| 1 | 1 | 1 | 2 |
+| 2 | 1 | 2 | 1 |
+| 3 | 2 | 1 | 3 |
+| 4 | 2 | 3 | 1 |
+| 5 | 3 | 2 | 1 |
+| 6 | 4 | 3 | 4 |
+
+">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://dbfiddle.uk/static/favicon.71f8e287.ico">
+  <link href="./MySQL 8.0 _ db__fiddle_files/reset.c4a60be7.css" rel="stylesheet">
+  <link href="./MySQL 8.0 _ db__fiddle_files/global.2531dfe9.css" rel="stylesheet">
+  <link href="./MySQL 8.0 _ db__fiddle_files/fiddle.270ea80c.css" rel="stylesheet">
+  <link href="./MySQL 8.0 _ db__fiddle_files/qp.8db7ca63.css" rel="stylesheet">
+  <script src="./MySQL 8.0 _ db__fiddle_files/codemirror.dad49f37.js.download" defer=""></script>
+  <script src="./MySQL 8.0 _ db__fiddle_files/qp.ea500846.js.download" defer=""></script>
+  <script src="./MySQL 8.0 _ db__fiddle_files/fiddle.10b8d2b1.js.download" defer=""></script>
+  <template></template>
+</head>
+<body>
+  <svg>
+    <defs>
+      <symbol id="plus" viewBox="0 0 10000 16" preserveAspectRatio="xMinYMid slice">
+        <title>add batch</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <line x1="8" y1="3.5" x2="8" y2="12.5" stroke="black" stroke-width="1.5"></line>
+        <line x1="3.5" y1="8" x2="12.5" y2="8" stroke="black" stroke-width="1.5"></line>
+        <line x1="16" y1="8" x2="10000" y2="8" stroke="black"></line>
+      </symbol>
+      <symbol id="hamburger" viewBox="0 0 16 16">
+        <line x1="4" y1="4.5" x2="12" y2="4.5" stroke="black" stroke-width="1.5"></line>
+        <line x1="4" y1="8" x2="12" y2="8" stroke="black" stroke-width="1.5"></line>
+        <line x1="4" y1="11.5" x2="12" y2="11.5" stroke="black" stroke-width="1.5"></line>
+      </symbol>
+      <symbol id="remove" viewBox="0 0 16 16">
+        <title>remove batch</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <path d="M 12 4.5 L 11 12.5 L 5 12.5 L 4 4.5 Z" stroke="black" stroke-width="1.5" stroke-linejoin="round" fill-opacity="0"></path>
+        <line x1="7" y1="3.5" x2="9" y2="3.5" stroke="black" stroke-width="1.5"></line>
+        <line x1="6.5" y1="11.5" x2="6" y2="6.5" stroke="black" stroke-width="0.5"></line>
+        <line x1="8" y1="11.5" x2="8" y2="6.5" stroke="black" stroke-width="0.5"></line>
+        <line x1="9.5" y1="11.5" x2="10" y2="6.5" stroke="black" stroke-width="0.5"></line>
+      </symbol>
+      <symbol id="split" viewBox="0 0 16 16">
+        <title>split batch</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <line x1="3.5" y1="4.5" x2="12" y2="4.5" stroke="black" stroke-width="1.5"></line>
+        <line x1="7" y1="8" x2="12" y2="8" stroke="black" stroke-width="1.5"></line>
+        <line x1="7" y1="11.5" x2="12" y2="11.5" stroke="black" stroke-width="1.5"></line>
+        <line x1="7" y1="4.5" x2="7" y2="11.5" stroke="black" stroke-width="1.5"></line>
+      </symbol>
+      <symbol id="comment" viewBox="0 0 16 16">
+        <title>comment selection</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+      </symbol>
+      <symbol id="show" viewBox="0 0 10000 16" preserveAspectRatio="xMinYMid slice">
+        <title>show hidden batches</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <path d="M 3 8 A 5.5 5.5 0 0 1 13 8 M 13 8 A 5.5 5.5 0 0 1 3 8" stroke="black" stroke-width="1.5" fill-opacity="0"></path>
+        <circle cx="8" cy="8" r="1.5" stroke="black" fill-opacity="0"></circle>
+        <line x1="16" y1="8" x2="10000" y2="8" stroke="black"></line>
+      </symbol>
+      <symbol id="hide" viewBox="0 0 16 16">
+        <title>hide batch</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <path d="M 3 8 A 5.5 5.5 0 0 1 13 8 M 13 8 A 5.5 5.5 0 0 1 3 8" stroke="black" stroke-width="1.5" fill-opacity="0"></path>
+        <circle cx="8" cy="8" r="1.5" stroke="black" fill-opacity="0"></circle>
+        <line x1="13" y1="3" x2="3" y2="13" stroke-width="2" stroke="white"></line>
+        <line x1="12.5" y1="3.5" x2="3.5" y2="12.5" stroke="black"></line>
+      </symbol>
+      <symbol id="highlight" viewBox="0 0 16 16">
+        <title>highlight batch</title>
+        <rect x="0.5" y="0.5" width="15" height="15" ry="3" rx="3" stroke="black" fill-opacity="0"></rect>
+        <path d="M 8 4 L 5 7 L 10 12 L 13 9" stroke="black" stroke-width="1.5" fill-opacity="0" stroke-linejoin="round"></path>
+        <path d="M 6 8 L 3 11 3 12 L 8 12 9 11 Z" stroke="black" stroke-width="1.5" fill-opacity="1" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol id="spinner" viewBox="-1 -1 12 12">
+        <circle cx="0" cy="5" r="1"></circle>
+        <circle cx="1.464" cy="1.464" r="1"></circle>
+        <circle cx="5" cy="0" r="1"></circle>
+        <circle cx="8.536" cy="1.464" r="1"></circle>
+        <circle cx="10" cy="5" r="1"></circle>
+        <circle cx="8.536" cy="8.536" r="1"></circle>
+        <circle cx="5" cy="10" r="1"></circle>
+        <circle cx="1.464" cy="8.536" r="1"></circle>
+      </symbol></defs></svg>
+    
+  
+  <header>
+    <div>
+      <a href="https://dbfiddle.uk/">db&lt;&gt;fiddle</a>
+      <select id="engine">
+        <option value="db2" data-separator=";">Db2</option>
+        <option value="firebird" data-separator=";">Firebird</option>
+        <option value="mariadb" data-separator=";">MariaDB</option>
+        <option value="mysql" data-separator=";" selected="">MySQL</option>
+        <option value="nodejs" data-separator=";">Node.js</option>
+        <option value="oracle" data-separator=";">Oracle</option>
+        <option value="postgres" data-separator=";">Postgres</option>
+        <option value="sqlserver" data-separator="^\s*go\s*$">SQL Server</option>
+        <option value="sqlite" data-separator=";">SQLite</option>
+        <option value="timescaledb" data-separator=";">TimescaleDB</option>
+        <option value="yugabytedb" data-separator=";">YugabyteDB</option>
+      </select>
+      <select class="version hidden" data-engine="db2">
+        <option value="11.1" selected="">Developer-C 11.1</option>
+      </select>
+      <select class="version hidden" data-engine="firebird">
+        <option value="3.0">3.0</option>
+        <option value="4.0" selected="">4.0</option>
+      </select>
+      <select class="version hidden" data-engine="mariadb">
+        <option value="10.2" disabled="">10.2</option>
+        <option value="10.3">10.3</option>
+        <option value="10.4">10.4</option>
+        <option value="10.5">10.5</option>
+        <option value="10.6">10.6</option>
+        <option value="10.7">10.7</option>
+        <option value="10.8">10.8</option>
+        <option value="10.9">10.9</option>
+        <option value="10.11">10.11</option>
+        <option value="11.4" selected="">11.4</option>
+      </select>
+      <select class="version" data-engine="mysql">
+        <option value="5.5">5.5</option>
+        <option value="5.6">5.6</option>
+        <option value="5.7">5.7</option>
+        <option value="8.0" selected="">8.0</option>
+        <option value="8.4">8.4</option>
+      </select>
+      <select class="version hidden" data-engine="nodejs">
+        <option value="18" selected="">18</option>
+      </select>
+      <select class="version hidden" data-engine="oracle">
+        <option value="11.2">11g Release 2</option>
+        <option value="18">18c</option>
+        <option value="21">21c</option>
+        <option value="23" selected="">23c</option>
+      </select>
+      <select class="version hidden" data-engine="postgres">
+        <option value="8.4" disabled="">8.4</option>
+        <option value="9.3">9.3</option>
+        <option value="9.4">9.4</option>
+        <option value="9.5">9.5</option>
+        <option value="9.6">9.6</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17" selected="">17</option>
+        <option value="18">18 beta 1</option>
+      </select>
+      <select class="version hidden" data-engine="sqlserver">
+        <option value="2012" disabled="">2012</option>
+        <option value="2014">2014</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2017l">2017 (Linux)</option>
+        <option value="2019">2019</option>
+        <option value="2019l">2019 (Linux)</option>
+        <option value="2022" selected="">2022</option>
+      </select>
+      <select class="version hidden" data-engine="sqlite">
+        <option value="3.8" disabled="">3.8</option>
+        <option value="3.16" disabled="">3.16</option>
+        <option value="3.27">3.27</option>
+        <option value="3.39" selected="">3.39</option>
+      </select>
+      <select class="version hidden" data-engine="timescaledb">
+        <option value="2.11">2.11</option>
+        <option value="2.14" selected="">2.14</option>
+      </select>
+      <select class="version hidden" data-engine="yugabytedb">
+        <option value="2.6">2.6</option>
+        <option value="2.8">2.8</option>
+        <option value="2.18" selected="">2.18</option>
+      </select>
+      <select class="sample hidden empty" data-engine="db2" data-version="11.1">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="firebird" data-version="3.0">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="firebird" data-version="4.0">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.2">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.3">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.4">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.5">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.6">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.7">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.8">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.9">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="10.11">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mariadb" data-version="11.4">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mysql" data-version="5.5">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mysql" data-version="5.6">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mysql" data-version="5.7">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample" data-engine="mysql" data-version="8.0">
+        <option value="" selected="">no sample DB</option>
+        <option value="sakila">Sakila</option>
+      </select>
+      <select class="sample hidden empty" data-engine="mysql" data-version="8.4">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="nodejs" data-version="18">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="oracle" data-version="11.2">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="oracle" data-version="18">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="oracle" data-version="21">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="oracle" data-version="23">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="8.4">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="9.3">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="9.4">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="9.5">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="9.6">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="10">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="11">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="12">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="13">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="14">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="15">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="16">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="17">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="postgres" data-version="18">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2012">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2014">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2016">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2017">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2017l">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden" data-engine="sqlserver" data-version="2019">
+        <option value="" selected="">no sample DB</option>
+        <option value="adventureworks">AdventureWorks</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlserver" data-version="2019l">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden" data-engine="sqlserver" data-version="2022">
+        <option value="" selected="">no sample DB</option>
+        <option value="adventureworks">AdventureWorks</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlite" data-version="3.8">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlite" data-version="3.16">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlite" data-version="3.27">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="sqlite" data-version="3.39">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="timescaledb" data-version="2.11">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="timescaledb" data-version="2.14">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="yugabytedb" data-version="2.6">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="yugabytedb" data-version="2.8">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <select class="sample hidden empty" data-engine="yugabytedb" data-version="2.18">
+        <option value="" selected="">no sample DB</option>
+      </select>
+      <button id="run" accesskey="r"><span>run</span><svg class="spinner"><use href="#spinner"></use></svg></button>
+      <button id="abort" accesskey="r"><span>abort</span></button>
+      <button id="markdown" accesskey="m">markdown</button>
+    </div>
+    <div>
+      <a href="https://github.com/sponsors/jackdouglas">donate</a>
+      <a href="https://topanswers.xyz/fiddle?q=2035">feedback</a>
+      <a href="https://topanswers.xyz/fiddle?q=2036">about</a>
+    </div>
+  </header>
+  <main>
+    <header>
+      <div>By using db&lt;&gt;fiddle, you agree to license everything you submit by <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">Creative Commons CC0</a>.</div>
+    </header>
+    <div>
+      <div class="line">
+        <div class="icon plus" title="add batch"><svg><use href="#plus"></use></svg></div>
+        <div class="batch">
+          <div class="controls">
+            <div class="icon hamburger"><svg><use href="#hamburger"></use></svg></div>
+            <div class="icon remove hidden" title="remove batch"><svg><use href="#remove"></use></svg></div>
+            <div class="icon split hidden" title="split batch"><svg><use href="#split"></use></svg></div>
+            <div class="icon hide hidden" title="hide batch"><svg><use href="#hide"></use></svg></div>
+            <div class="icon highlight hidden" title="toggle highlight for batch"><svg><use href="#highlight"></use></svg></div>
+          </div>
+          <div class="io">
+            <div class="input" data-markdown="``` 
+-- =====================================
+-- COMPLETE ECOMMERCE PROJECT EXECUTION
+-- =====================================
+-- Current Date: 2026-02-09 (for 30-day query reference)
+
+-- 1. Create database and use it
+CREATE DATABASE IF NOT EXISTS ecommerce;
+USE ecommerce;
+
+-- 2. Drop tables if exist (for clean re-run)
+DROP TABLE IF EXISTS order_items;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS customers;
+
+-- 3. Create tables
+CREATE TABLE customers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    address TEXT
+);
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
+);
+
+-- 4. Insert sample data
+INSERT INTO customers (name, email, address) VALUES
+(&#39;John Doe&#39;, &#39;john@example.com&#39;, &#39;123 Main St, Chennai&#39;),
+(&#39;Jane Smith&#39;, &#39;jane@example.com&#39;, &#39;456 Oak Ave, Mumbai&#39;),
+(&#39;Bob Johnson&#39;, &#39;bob@example.com&#39;, &#39;789 Pine Rd, Delhi&#39;);
+
+INSERT INTO products (name, price, description) VALUES
+(&#39;Product A&#39;, 25.00, &#39;High quality item A&#39;),
+(&#39;Product B&#39;, 35.00, &#39;Premium item B&#39;),
+(&#39;Product C&#39;, 40.00, &#39;Standard item C&#39;);
+
+INSERT INTO orders (customer_id, order_date, total_amount) VALUES
+(1, &#39;2026-02-01&#39;, 75.00),   -- Recent (within 30 days)
+(2, &#39;2026-01-15&#39;, 120.00),
+(1, &#39;2026-01-05&#39;, 50.00),
+(3, &#39;2026-01-20&#39;, 200.00);
+
+-- =====================================
+-- REQUIRED QUERIES (Execute in order)
+-- =====================================
+
+-- QUERY 1: Customers with orders in last 30 days
+SELECT &#39;QUERY 1: Customers (last 30 days)&#39; as Result;
+SELECT DISTINCT c.name, c.email
+FROM customers c JOIN orders o ON c.id = o.customer_id
+WHERE o.order_date &gt;= &#39;2026-01-10&#39;;  -- 30 days before 2026-02-09
+
+-- QUERY 2: Total amount per customer
+SELECT &#39;QUERY 2: Total per customer&#39; as Result;
+SELECT c.name, SUM(o.total_amount) as total_spent
+FROM customers c LEFT JOIN orders o ON c.id = o.customer_id
+GROUP BY c.id, c.name;
+
+-- QUERY 3: Update Product C price to 45.00
+UPDATE products SET price = 45.00 WHERE name = &#39;Product C&#39;;
+SELECT &#39;QUERY 3: Product C updated to $45&#39; as Result;
+
+-- QUERY 4: Add discount column
+ALTER TABLE products ADD COLUMN discount DECIMAL(5,2) DEFAULT 0.00;
+SELECT &#39;QUERY 4: Discount column added&#39; as Result;
+
+-- QUERY 5: Top 3 highest priced products
+SELECT &#39;QUERY 5: Top 3 products by price&#39; as Result;
+SELECT name, price FROM products ORDER BY price DESC LIMIT 3;
+
+-- QUERY 6: Prep for normalization (will update after order_items)
+SELECT &#39;QUERY 6: Will show after normalization&#39; as Note;
+
+-- QUERY 7: Customer name + order date
+SELECT &#39;QUERY 7: Customers &amp; Orders Join&#39; as Result;
+SELECT c.name, o.order_date, o.total_amount
+FROM customers c JOIN orders o ON c.id = o.customer_id;
+
+-- QUERY 8: Orders &gt; 150.00
+SELECT &#39;QUERY 8: Orders over 150&#39; as Result;
+SELECT * FROM orders WHERE total_amount &gt; 150.00;
+
+-- QUERY 9: Normalization - Create order_items
+CREATE TABLE order_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
+    product_id INT,
+    quantity INT NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+-- Insert order_items data
+INSERT INTO order_items (order_id, product_id, quantity) VALUES
+(1, 1, 2), (1, 2, 1),    -- Order 1: 2A + 1B = 50+35=85 (adjusted)
+(2, 1, 3), (2, 3, 1),    -- Order 2: 3A + 1C = 75+45=120
+(3, 2, 1),               -- Order 3: 1B = 35 (adjusted)
+(4, 3, 4);               -- Order 4: 4C = 180 (adjusted)
+
+-- Update totals to match items
+UPDATE orders SET total_amount = 85.00 WHERE id=1;
+UPDATE orders SET total_amount = 120.00 WHERE id=2;
+UPDATE orders SET total_amount = 35.00 WHERE id=3;
+UPDATE orders SET total_amount = 180.00 WHERE id=4;
+
+SELECT &#39;QUERY 9: Normalization complete&#39; as Result;
+
+-- UPDATED QUERY 6: Customers who ordered Product A
+SELECT &#39;QUERY 6 (Updated): Customers with Product A&#39; as Result;
+SELECT DISTINCT c.name
+FROM customers c
+JOIN orders o ON c.id = o.customer_id
+JOIN order_items oi ON o.id = oi.order_id
+JOIN products p ON oi.product_id = p.id
+WHERE p.name = &#39;Product A&#39;;
+
+-- QUERY 10: Average total of all orders
+SELECT &#39;QUERY 10: Average order total&#39; as Result;
+SELECT AVG(total_amount) as average_order_total FROM orders;
+
+-- FINAL TABLES OVERVIEW
+SELECT &#39;FINAL CUSTOMERS TABLE&#39; as Table_Overview;
+SELECT * FROM customers;
+SELECT &#39;FINAL PRODUCTS TABLE&#39; as Table_Overview;
+SELECT * FROM products;
+SELECT &#39;FINAL ORDERS TABLE&#39; as Table_Overview;
+SELECT * FROM orders;
+SELECT &#39;FINAL ORDER_ITEMS TABLE&#39; as Table_Overview;
+SELECT * FROM order_items;
+
+```
+"><div class="cm-editor ͼ1 ͼ2 ͼ4"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 2601.6px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">999</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.193px;">1</div><div class="cm-gutterElement" style="height: 18.193px;">2</div><div class="cm-gutterElement" style="height: 18.193px;">3</div><div class="cm-gutterElement" style="height: 18.193px;">4</div><div class="cm-gutterElement" style="height: 18.193px;">5</div><div class="cm-gutterElement" style="height: 18.193px;">6</div><div class="cm-gutterElement" style="height: 18.193px;">7</div><div class="cm-gutterElement" style="height: 18.193px;">8</div><div class="cm-gutterElement" style="height: 18.193px;">9</div><div class="cm-gutterElement" style="height: 18.193px;">10</div><div class="cm-gutterElement" style="height: 18.193px;">11</div><div class="cm-gutterElement" style="height: 18.193px;">12</div><div class="cm-gutterElement" style="height: 18.193px;">13</div><div class="cm-gutterElement" style="height: 18.193px;">14</div><div class="cm-gutterElement" style="height: 18.193px;">15</div><div class="cm-gutterElement" style="height: 18.193px;">16</div><div class="cm-gutterElement" style="height: 18.193px;">17</div><div class="cm-gutterElement" style="height: 18.193px;">18</div><div class="cm-gutterElement" style="height: 18.193px;">19</div><div class="cm-gutterElement" style="height: 18.193px;">20</div><div class="cm-gutterElement" style="height: 18.193px;">21</div><div class="cm-gutterElement" style="height: 18.193px;">22</div><div class="cm-gutterElement" style="height: 18.193px;">23</div><div class="cm-gutterElement" style="height: 18.193px;">24</div><div class="cm-gutterElement" style="height: 18.193px;">25</div><div class="cm-gutterElement" style="height: 18.193px;">26</div><div class="cm-gutterElement" style="height: 18.193px;">27</div><div class="cm-gutterElement" style="height: 18.193px;">28</div><div class="cm-gutterElement" style="height: 18.193px;">29</div><div class="cm-gutterElement" style="height: 18.193px;">30</div><div class="cm-gutterElement" style="height: 18.193px;">31</div><div class="cm-gutterElement" style="height: 18.193px;">32</div><div class="cm-gutterElement" style="height: 18.193px;">33</div><div class="cm-gutterElement" style="height: 18.193px;">34</div><div class="cm-gutterElement" style="height: 18.193px;">35</div><div class="cm-gutterElement" style="height: 18.193px;">36</div><div class="cm-gutterElement" style="height: 18.193px;">37</div><div class="cm-gutterElement" style="height: 18.193px;">38</div><div class="cm-gutterElement" style="height: 18.193px;">39</div><div class="cm-gutterElement" style="height: 18.193px;">40</div><div class="cm-gutterElement" style="height: 18.193px;">41</div><div class="cm-gutterElement" style="height: 18.193px;">42</div><div class="cm-gutterElement" style="height: 18.193px;">43</div><div class="cm-gutterElement" style="height: 18.193px;">44</div><div class="cm-gutterElement" style="height: 18.193px;">45</div><div class="cm-gutterElement" style="height: 18.193px;">46</div><div class="cm-gutterElement" style="height: 18.193px;">47</div><div class="cm-gutterElement" style="height: 18.193px;">48</div><div class="cm-gutterElement" style="height: 18.193px;">49</div><div class="cm-gutterElement" style="height: 18.193px;">50</div><div class="cm-gutterElement" style="height: 18.193px;">51</div><div class="cm-gutterElement" style="height: 18.193px;">52</div><div class="cm-gutterElement" style="height: 18.193px;">53</div><div class="cm-gutterElement" style="height: 18.193px;">54</div><div class="cm-gutterElement" style="height: 18.193px;">55</div><div class="cm-gutterElement" style="height: 18.193px;">56</div><div class="cm-gutterElement" style="height: 18.193px;">57</div><div class="cm-gutterElement" style="height: 18.193px;">58</div><div class="cm-gutterElement" style="height: 18.193px;">59</div><div class="cm-gutterElement" style="height: 18.193px;">60</div><div class="cm-gutterElement" style="height: 18.193px;">61</div><div class="cm-gutterElement" style="height: 18.193px;">62</div><div class="cm-gutterElement" style="height: 18.193px;">63</div><div class="cm-gutterElement" style="height: 18.193px;">64</div><div class="cm-gutterElement" style="height: 18.193px;">65</div><div class="cm-gutterElement" style="height: 18.193px;">66</div><div class="cm-gutterElement" style="height: 18.193px;">67</div><div class="cm-gutterElement" style="height: 18.193px;">68</div><div class="cm-gutterElement" style="height: 18.193px;">69</div><div class="cm-gutterElement" style="height: 18.193px;">70</div><div class="cm-gutterElement" style="height: 18.193px;">71</div><div class="cm-gutterElement" style="height: 18.193px;">72</div><div class="cm-gutterElement" style="height: 18.193px;">73</div><div class="cm-gutterElement" style="height: 18.193px;">74</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.193px;"></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 272.895px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 109.158px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 109.158px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 145.544px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 72.7719px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 72.7719px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 200.123px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.193px; margin-top: 90.9649px;"><span title="Fold line">⌄</span></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" writingsuggestions="false" translate="no" contenteditable="true" class="cm-content" role="textbox" aria-multiline="true" data-language="sql" style="tab-size: 4;"><div class="cm-activeLine cm-line"><span class="ͼm">-- =====================================</span></div><div class="cm-line"><span class="ͼm">-- COMPLETE ECOMMERCE PROJECT EXECUTION</span></div><div class="cm-line"><span class="ͼm">-- =====================================</span></div><div class="cm-line"><span class="ͼm">-- Current Date: 2026-02-09 (for 30-day query reference)</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- 1. Create database and use it</span></div><div class="cm-line"><span class="ͼb">CREATE</span> <span class="ͼb">DATABASE</span> <span class="ͼb">IF</span> <span class="ͼb">NOT</span> <span class="ͼb">EXISTS</span> ecommerce;</div><div class="cm-line"><span class="ͼb">USE</span> ecommerce;</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- 2. Drop tables if exist (for clean re-run)</span></div><div class="cm-line"><span class="ͼb">DROP</span> <span class="ͼb">TABLE</span> <span class="ͼb">IF</span> <span class="ͼb">EXISTS</span> order_items;</div><div class="cm-line"><span class="ͼb">DROP</span> <span class="ͼb">TABLE</span> <span class="ͼb">IF</span> <span class="ͼb">EXISTS</span> orders;</div><div class="cm-line"><span class="ͼb">DROP</span> <span class="ͼb">TABLE</span> <span class="ͼb">IF</span> <span class="ͼb">EXISTS</span> products;</div><div class="cm-line"><span class="ͼb">DROP</span> <span class="ͼb">TABLE</span> <span class="ͼb">IF</span> <span class="ͼb">EXISTS</span> customers;</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- 3. Create tables</span></div><div class="cm-line"><span class="ͼb">CREATE</span> <span class="ͼb">TABLE</span> customers (</div><div class="cm-line">    id <span class="ͼi">INT</span> <span class="ͼb">AUTO_INCREMENT</span> <span class="ͼb">PRIMARY</span> <span class="ͼb">KEY</span>,</div><div class="cm-line">    name <span class="ͼi">VARCHAR</span>(<span class="ͼd">100</span>) <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    email <span class="ͼi">VARCHAR</span>(<span class="ͼd">100</span>) <span class="ͼb">UNIQUE</span> <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    address <span class="ͼi">TEXT</span></div><div class="cm-line">);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼb">CREATE</span> <span class="ͼb">TABLE</span> products (</div><div class="cm-line">    id <span class="ͼi">INT</span> <span class="ͼb">AUTO_INCREMENT</span> <span class="ͼb">PRIMARY</span> <span class="ͼb">KEY</span>,</div><div class="cm-line">    name <span class="ͼi">VARCHAR</span>(<span class="ͼd">100</span>) <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    price <span class="ͼi">DECIMAL</span>(<span class="ͼd">10</span>,<span class="ͼd">2</span>) <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    description <span class="ͼi">TEXT</span></div><div class="cm-line">);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼb">CREATE</span> <span class="ͼb">TABLE</span> orders (</div><div class="cm-line">    id <span class="ͼi">INT</span> <span class="ͼb">AUTO_INCREMENT</span> <span class="ͼb">PRIMARY</span> <span class="ͼb">KEY</span>,</div><div class="cm-line">    customer_id <span class="ͼi">INT</span>,</div><div class="cm-line">    order_date <span class="ͼi">DATE</span> <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    total_amount <span class="ͼi">DECIMAL</span>(<span class="ͼd">10</span>,<span class="ͼd">2</span>) <span class="ͼb">NOT</span> <span class="ͼb">NULL</span>,</div><div class="cm-line">    <span class="ͼb">FOREIGN</span> <span class="ͼb">KEY</span> (customer_id) <span class="ͼb">REFERENCES</span> customers(id)</div><div class="cm-line">);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- 4. Insert sample data</span></div><div class="cm-line"><span class="ͼb">INSERT</span> <span class="ͼb">INTO</span> customers (name, email, address) <span class="ͼb">VALUES</span></div><div class="cm-line">(<span class="ͼe">'John Doe'</span>, <span class="ͼe">'john@example.com'</span>, <span class="ͼe">'123 Main St, Chennai'</span>),</div><div class="cm-line">(<span class="ͼe">'Jane Smith'</span>, <span class="ͼe">'jane@example.com'</span>, <span class="ͼe">'456 Oak Ave, Mumbai'</span>),</div><div class="cm-line">(<span class="ͼe">'Bob Johnson'</span>, <span class="ͼe">'bob@example.com'</span>, <span class="ͼe">'789 Pine Rd, Delhi'</span>);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼb">INSERT</span> <span class="ͼb">INTO</span> products (name, price, description) <span class="ͼb">VALUES</span></div><div class="cm-line">(<span class="ͼe">'Product A'</span>, <span class="ͼd">25.00</span>, <span class="ͼe">'High quality item A'</span>),</div><div class="cm-line">(<span class="ͼe">'Product B'</span>, <span class="ͼd">35.00</span>, <span class="ͼe">'Premium item B'</span>),</div><div class="cm-line">(<span class="ͼe">'Product C'</span>, <span class="ͼd">40.00</span>, <span class="ͼe">'Standard item C'</span>);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼb">INSERT</span> <span class="ͼb">INTO</span> orders (customer_id, order_date, total_amount) <span class="ͼb">VALUES</span></div><div class="cm-line">(<span class="ͼd">1</span>, <span class="ͼe">'2026-02-01'</span>, <span class="ͼd">75.00</span>),   <span class="ͼm">-- Recent (within 30 days)</span></div><div class="cm-line">(<span class="ͼd">2</span>, <span class="ͼe">'2026-01-15'</span>, <span class="ͼd">120.00</span>),</div><div class="cm-line">(<span class="ͼd">1</span>, <span class="ͼe">'2026-01-05'</span>, <span class="ͼd">50.00</span>),</div><div class="cm-line">(<span class="ͼd">3</span>, <span class="ͼe">'2026-01-20'</span>, <span class="ͼd">200.00</span>);</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- =====================================</span></div><div class="cm-line"><span class="ͼm">-- REQUIRED QUERIES (Execute in order)</span></div><div class="cm-line"><span class="ͼm">-- =====================================</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- QUERY 1: Customers with orders in last 30 days</span></div><div class="cm-line"><span class="ͼb">SELECT</span> <span class="ͼe">'QUERY 1: Customers (last 30 days)'</span> <span class="ͼb">as</span> <span class="ͼb">Result</span>;</div><div class="cm-line"><span class="ͼb">SELECT</span> <span class="ͼb">DISTINCT</span> c.name, c.email</div><div class="cm-line"><span class="ͼb">FROM</span> customers c <span class="ͼb">JOIN</span> orders o <span class="ͼb">ON</span> c.id = o.customer_id</div><div class="cm-line"><span class="ͼb">WHERE</span> o.order_date &gt;= <span class="ͼe">'2026-01-10'</span>;  <span class="ͼm">-- 30 days before 2026-02-09</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- QUERY 2: Total amount per customer</span></div><div class="cm-line"><span class="ͼb">SELECT</span> <span class="ͼe">'QUERY 2: Total per customer'</span> <span class="ͼb">as</span> <span class="ͼb">Result</span>;</div><div class="cm-line"><span class="ͼb">SELECT</span> c.name, <span class="ͼb">SUM</span>(o.total_amount) <span class="ͼb">as</span> total_spent</div><div class="cm-line"><span class="ͼb">FROM</span> customers c <span class="ͼb">LEFT</span> <span class="ͼb">JOIN</span> orders o <span class="ͼb">ON</span> c.id = o.customer_id</div><div class="cm-line"><span class="ͼb">GROUP</span> <span class="ͼb">BY</span> c.id, c.name;</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼm">-- QUERY 3: Update Product C price to 45.00</span></div><div class="cm-line"><span class="ͼb">UPDATE</span> products <span class="ͼb">SET</span> price = <span class="ͼd">45.00</span> <span class="ͼb">WHERE</span> name = <span class="ͼe">'Product C'</span>;</div><div class="cm-line"><span class="ͼb">SELECT</span> <span class="ͼe">'QUERY 3: Product C updated to $45'</span> <span class="ͼb">as</span> <span class="ͼb">Result</span>;</div><div class="cm-gap" style="height: 1255.32px;"></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 45.1507px; top: 1.04851px; height: 15.2031px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div>
+            <div class="output" data-markdown="
+
+
+
+
+
+
+
+
+
+&gt; ``` status
+&gt; Records: 3  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Records: 3  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Records: 4  Duplicates: 0  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 1: Customers (last 30 days) |
+
+| name | email |
+|:-----|:------|
+| John Doe | john@example.com |
+| Jane Smith | jane@example.com |
+| Bob Johnson | bob@example.com |
+
+| Result |
+|:-------|
+| QUERY 2: Total per customer |
+
+| name | total\_spent |
+|:-----|------------:|
+| John Doe | 125.00 |
+| Jane Smith | 120.00 |
+| Bob Johnson | 200.00 |
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 3: Product C updated to $45 |
+
+
+&gt; ``` status
+&gt; Records: 0  Duplicates: 0  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 4: Discount column added |
+
+| Result |
+|:-------|
+| QUERY 5: Top 3 products by price |
+
+| name | price |
+|:-----|------:|
+| Product C | 45.00 |
+| Product B | 35.00 |
+| Product A | 25.00 |
+
+| Note |
+|:-----|
+| QUERY 6: Will show after normalization |
+
+| Result |
+|:-------|
+| QUERY 7: Customers \&amp; Orders Join |
+
+| name | order\_date | total\_amount |
+|:-----|:-----------|-------------:|
+| John Doe | 2026-02-01 | 75.00 |
+| John Doe | 2026-01-05 | 50.00 |
+| Jane Smith | 2026-01-15 | 120.00 |
+| Bob Johnson | 2026-01-20 | 200.00 |
+
+| Result |
+|:-------|
+| QUERY 8: Orders over 150 |
+
+| id | customer\_id | order\_date | total\_amount |
+|---:|------------:|:-----------|-------------:|
+| 4 | 3 | 2026-01-20 | 200.00 |
+
+
+
+&gt; ``` status
+&gt; Records: 6  Duplicates: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 0  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+
+&gt; ``` status
+&gt; Rows matched: 1  Changed: 1  Warnings: 0
+&gt; ```
+
+| Result |
+|:-------|
+| QUERY 9: Normalization complete |
+
+| Result |
+|:-------|
+| QUERY 6 (Updated): Customers with Product A |
+
+| name |
+|:-----|
+| John Doe |
+| Jane Smith |
+
+| Result |
+|:-------|
+| QUERY 10: Average order total |
+
+| average\_order\_total |
+|--------------------:|
+| 105.000000 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL CUSTOMERS TABLE |
+
+| id | name | email | address |
+|---:|:-----|:------|:--------|
+| 1 | John Doe | john@example.com | 123 Main St, Chennai |
+| 2 | Jane Smith | jane@example.com | 456 Oak Ave, Mumbai |
+| 3 | Bob Johnson | bob@example.com | 789 Pine Rd, Delhi |
+
+| Table\_Overview |
+|:---------------|
+| FINAL PRODUCTS TABLE |
+
+| id | name | price | description | discount |
+|---:|:-----|------:|:------------|---------:|
+| 1 | Product A | 25.00 | High quality item A | 0.00 |
+| 2 | Product B | 35.00 | Premium item B | 0.00 |
+| 3 | Product C | 45.00 | Standard item C | 0.00 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL ORDERS TABLE |
+
+| id | customer\_id | order\_date | total\_amount |
+|---:|------------:|:-----------|-------------:|
+| 1 | 1 | 2026-02-01 | 85.00 |
+| 2 | 2 | 2026-01-15 | 120.00 |
+| 3 | 1 | 2026-01-05 | 35.00 |
+| 4 | 3 | 2026-01-20 | 180.00 |
+
+| Table\_Overview |
+|:---------------|
+| FINAL ORDER\_ITEMS TABLE |
+
+| id | order\_id | product\_id | quantity |
+|---:|---------:|-----------:|---------:|
+| 1 | 1 | 1 | 2 |
+| 2 | 1 | 2 | 1 |
+| 3 | 2 | 1 | 3 |
+| 4 | 2 | 3 | 1 |
+| 5 | 3 | 2 | 1 |
+| 6 | 4 | 3 | 4 |
+
+"><blockquote>
+<pre><code class="language-status">Records: 3  Duplicates: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Records: 3  Duplicates: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Records: 4  Duplicates: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 1: Customers (last 30 days)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">John Doe</td>
+<td style="text-align:left">john@example.com</td>
+</tr>
+<tr>
+<td style="text-align:left">Jane Smith</td>
+<td style="text-align:left">jane@example.com</td>
+</tr>
+<tr>
+<td style="text-align:left">Bob Johnson</td>
+<td style="text-align:left">bob@example.com</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 2: Total per customer</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:right">total_spent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">John Doe</td>
+<td style="text-align:right">125.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Jane Smith</td>
+<td style="text-align:right">120.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Bob Johnson</td>
+<td style="text-align:right">200.00</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<pre><code class="language-status">Rows matched: 1  Changed: 1  Warnings: 0
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 3: Product C updated to $45</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<pre><code class="language-status">Records: 0  Duplicates: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 4: Discount column added</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 5: Top 3 products by price</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:right">price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Product C</td>
+<td style="text-align:right">45.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Product B</td>
+<td style="text-align:right">35.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Product A</td>
+<td style="text-align:right">25.00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 6: Will show after normalization</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 7: Customers &amp; Orders Join</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">order_date</th>
+<th style="text-align:right">total_amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">John Doe</td>
+<td style="text-align:left">2026-02-01</td>
+<td style="text-align:right">75.00</td>
+</tr>
+<tr>
+<td style="text-align:left">John Doe</td>
+<td style="text-align:left">2026-01-05</td>
+<td style="text-align:right">50.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Jane Smith</td>
+<td style="text-align:left">2026-01-15</td>
+<td style="text-align:right">120.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Bob Johnson</td>
+<td style="text-align:left">2026-01-20</td>
+<td style="text-align:right">200.00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 8: Orders over 150</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">id</th>
+<th style="text-align:right">customer_id</th>
+<th style="text-align:left">order_date</th>
+<th style="text-align:right">total_amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3</td>
+<td style="text-align:left">2026-01-20</td>
+<td style="text-align:right">200.00</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<pre><code class="language-status">Records: 6  Duplicates: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Rows matched: 1  Changed: 1  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Rows matched: 1  Changed: 0  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Rows matched: 1  Changed: 1  Warnings: 0
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code class="language-status">Rows matched: 1  Changed: 1  Warnings: 0
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 9: Normalization complete</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 6 (Updated): Customers with Product A</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">John Doe</td>
+</tr>
+<tr>
+<td style="text-align:left">Jane Smith</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QUERY 10: Average order total</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">average_order_total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">105.000000</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Table_Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">FINAL CUSTOMERS TABLE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">id</th>
+<th style="text-align:left">name</th>
+<th style="text-align:left">email</th>
+<th style="text-align:left">address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left">John Doe</td>
+<td style="text-align:left">john@example.com</td>
+<td style="text-align:left">123 Main St, Chennai</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:left">Jane Smith</td>
+<td style="text-align:left">jane@example.com</td>
+<td style="text-align:left">456 Oak Ave, Mumbai</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:left">Bob Johnson</td>
+<td style="text-align:left">bob@example.com</td>
+<td style="text-align:left">789 Pine Rd, Delhi</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Table_Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">FINAL PRODUCTS TABLE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">id</th>
+<th style="text-align:left">name</th>
+<th style="text-align:right">price</th>
+<th style="text-align:left">description</th>
+<th style="text-align:right">discount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left">Product A</td>
+<td style="text-align:right">25.00</td>
+<td style="text-align:left">High quality item A</td>
+<td style="text-align:right">0.00</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:left">Product B</td>
+<td style="text-align:right">35.00</td>
+<td style="text-align:left">Premium item B</td>
+<td style="text-align:right">0.00</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:left">Product C</td>
+<td style="text-align:right">45.00</td>
+<td style="text-align:left">Standard item C</td>
+<td style="text-align:right">0.00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Table_Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">FINAL ORDERS TABLE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">id</th>
+<th style="text-align:right">customer_id</th>
+<th style="text-align:left">order_date</th>
+<th style="text-align:right">total_amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right">1</td>
+<td style="text-align:left">2026-02-01</td>
+<td style="text-align:right">85.00</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2</td>
+<td style="text-align:left">2026-01-15</td>
+<td style="text-align:right">120.00</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right">1</td>
+<td style="text-align:left">2026-01-05</td>
+<td style="text-align:right">35.00</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3</td>
+<td style="text-align:left">2026-01-20</td>
+<td style="text-align:right">180.00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Table_Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">FINAL ORDER_ITEMS TABLE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">id</th>
+<th style="text-align:right">order_id</th>
+<th style="text-align:right">product_id</th>
+<th style="text-align:right">quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+          </div>
+        </div>
+        <div class="icon show" title="show hidden batches"><svg><use href="#show"></use></svg></div>
+        <div class="icon plus" title="add batch"><svg><use href="#plus"></use></svg></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div><a href="https://dbfiddle.uk/">db&lt;&gt;fiddle</a> © 2017-2026 Jack Douglas</div>
+    <div><a href="https://twitter.com/dbfiddleuk">twitter</a></div>
+  </footer>
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><veepn-lock-screen><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none!important}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{appearance:auto}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{appearance:auto;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}@keyframes slide-in{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.gradient-blue{background:radial-gradient(106.41% 128.47% at 50.15% 128.47%,#23abff,#3066ff)}.gradient-green{background:radial-gradient(92.26% 118.88% at 50.15% .13%,#00c3c3,#00aab3)}.gradient-purple{background:radial-gradient(165.12% 115.56% at 50.15% .13%,#a15aff,#00a0eb)}.bg-blue{background-color:#f2f5ff}.bg-purple{background-color:#f7f0ff}.bg-green{background-color:#ebffed}.lock-screen{font-family:FigtreeVF,sans-serif;letter-spacing:normal;position:fixed;z-index:2147483638;right:24px;bottom:24px;width:327px;border-radius:24px;overflow:hidden;box-shadow:0 24px 32px #00000014;animation:slide-in .3s ease-in-out forwards}.lock-screen__content{position:relative;padding:24px 24px 64px}.lock-screen__close{position:absolute;top:16px;right:16px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:.5}.lock-screen__label{height:26px;width:fit-content;border-radius:50px;background-color:#fff3;padding-inline:16px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-size:12px;line-height:18px;margin:-8px auto 16px}.lock-screen__title{color:#fff;text-align:center;font-size:20px;line-height:28px;font-weight:600;margin-bottom:8px}.lock-screen__description{color:#f5f6f7;text-align:center;font-size:14px;line-height:20px}.lock-screen__description b{font-weight:600}.lock-screen__card{position:relative;z-index:1;margin-top:-44px;background-color:#fff;border-radius:24px;padding:32px 20px 20px}.lock-screen__inner{margin-bottom:24px}.lock-screen__submit{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;height:40px;width:100%;border-radius:12px;padding-inline:16px;background-color:#f70;color:#fff;margin-bottom:16px}.lock-screen__skip{display:flex;align-items:center;justify-content:center;font-size:14px;line-height:20px;color:#82829c;margin-inline:auto}.price-card{border:1px solid #f2f2fc;background:linear-gradient(254.14deg,#fafbff .04%,#f5f8ff 100.04%);border-radius:24px;padding:24px 28px}.price-card__label{color:#4a5764;text-align:center;font-size:14px;line-height:20px;text-transform:uppercase;margin-bottom:16px}.price-card__price{display:flex;justify-content:center;align-items:flex-start;column-gap:2px;margin-bottom:12px}.price-card__currency{color:#515478;font-size:18px;line-height:28px}.price-card__number{color:#14142a;text-align:center;font-size:64px;line-height:54px}.price-card__wrap{display:flex;flex-direction:column}.price-card__decimal{color:#515478;font-size:18px;line-height:28px;font-weight:600}.price-card__period{color:#515478;font-size:14px;line-height:20px;margin-top:-6px}.price-card__discount{position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:12px}.price-card__discount-divider{position:absolute;z-index:0;top:50%;left:0;width:100%;height:1px;background-color:#dbe2f9;transform:translateY(-50%)}.price-card__discount-icon{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%)}.price-card__discount-text{position:relative;z-index:2;color:#fff;font-size:12px;font-weight:600;line-height:18px}.price-card__features{display:flex;align-items:center;justify-content:center;column-gap:16px}.price-card__feature{color:#222e3a;font-size:14px;line-height:20px;display:flex;align-items:center;gap:6px}.price-card__feature:before{content:"";display:block;width:4px;height:4px;background-color:#20df9e;border-radius:50%;flex-shrink:0}.features-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.features-list__item{display:flex;flex-direction:column;align-items:center;gap:6px}.features-list__icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center}.features-list__text{color:#293a53;text-align:center;font-size:16px;line-height:24px;letter-spacing:-.1px}</style></template><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen></body></html>
